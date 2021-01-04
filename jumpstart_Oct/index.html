@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css"
+    <meta charset="utf-8">
+    <title>Ghost Busting</title>
+    <link rel="shortcut icon" href="/images/ghostbusters.png">
+  </head>
+  <body>
+<!-- ​<nav><a href="#Footer">Footer</a> -->
+​
+
+</nav>
+<a href="https://youtu.be/wQAljlSmjC8">
+  <img alt="Ghostbusters Trailer" src="/images/ghostbusters.png"
+  style="width:300px">
+</a>
+<img style="width:300px" src="/images/ghostbusters-name.png" alt="Ghostbusters Logo">
+<h2>Who You Gonna Call?</h2>​
+
+<ul>
+<li>Rule 1: Trap the Ghost</li>
+<li>Rule 2: Avoid getting slimmed by Slimer</li>
+<li>Rule 3: Avoid running out of Plasma Energy</li>
+<li>Rule 4: Don't cross the Streams</li>
+</ul>
+​
+<h1 style="color:red;">Energy Level: <span id="currentCount">10</span></h1>
+
+<hr>
+<hr>
+
+    <table id="gameBoard">
+      <tr>
+        <td id="1" onclick="locationCheck(1)"> <img  src="/images/closeBook.png"></td>
+        <td id="2" onclick="locationCheck(2)"> <img  src="/images/closeBook.png"></td>
+        <td id="3" onclick="locationCheck(3)"> <img  src="/images/closeBook.png"></td>
+        <td id="4" onclick="locationCheck(4)"> <img  src="/images/closeBook.png"></td>
+​
+      </tr>
+      <tr>
+        <td id="5" onclick="locationCheck(5)"> <img  src="/images/closeBook.png"></td>
+        <td id="6" onclick="locationCheck(6)"> <img  src="/images/closeBook.png"></td>
+        <td id="7" onclick="locationCheck(7)"> <img  src="/images/closeBook.png"></td>
+        <td id="8" onclick="locationCheck(8)"> <img  src="/images/closeBook.png"></td>
+​
+      </tr>
+      <tr>
+        <td id="9" onclick="locationCheck(9)"> <img  src="/images/closeBook.png"></td>
+        <td id="10" onclick="locationCheck(10)"> <img  src="/images/closeBook.png"></td>
+        <td id="11" onclick="locationCheck(11)"> <img  src="/images/closeBook.png"></td>
+        <td id="12" onclick="locationCheck(12)"> <img  src="/images/closeBook.png"></td>
+      <tr>
+        <td id="13" onclick="locationCheck(13)"> <img  src="/images/closeBook.png"></td>
+        <td id="14" onclick="locationCheck(14)"> <img  src="/images/closeBook.png"></td>
+        <td id="15" onclick="locationCheck(15)"> <img  src="/images/closeBook.png"></td>
+        <td id="16" onclick="locationCheck(16)"> <img  src="/images/closeBook.png"></td>
+      </tr>
+    </table>
+​
+<!-- ​<button type="button">Restart Game </button> -->
+<button onclick="reset()" type="reset" value="Reset">Reset</button>
+
+<br>
+<audio id="music" controls volume="0.1" autoplay>
+  <source src="Ghostbusters.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<script>
+  var vid = document.getElementById("music");
+    vid.volume = 0.1;
+
+  function reset() {
+    location.reload();
+  }
+</script> ​
+
+<footer id=#Footer>by Chris M</footer>
+
+<a href="https://en.wikipedia.org/wiki/Ghostbusters" target="_blank">Origin Story</a>
+
+<script type="text/javascript" src="treasureHunt.js"></script>
+
+
+
+
+  </body>
+</html>
